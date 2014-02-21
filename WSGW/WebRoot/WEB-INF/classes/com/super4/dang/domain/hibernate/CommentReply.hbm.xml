@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.super4.dang.domain">
+    <class name="CommentReply" table="d_d_comment_reply">
+        <id name="id" type="integer">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <many-to-one name="user" class="User" column="user_id"/>
+        <property name="commentId" type="integer">
+            <column name="comment_id" not-null="true" />
+        </property>
+        <property name="reply_time" type="long">
+            <column name="reply_time" />
+        </property>
+        <property name="reply_content" type="string">
+            <column name="reply_content" length="3000" not-null="true" />
+        </property>
+        <property name="turn" type="integer">
+            <column name="turn" length="22" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/success.do" location="1250,1150" dimension="304,104" />
+  <StrutsActivity path="/information.do" location="650,150" dimension="320,104" />
+  <StrutsActivity path="/showInfo.do" location="50,1350" dimension="320,104" />
+  <StrutsActivity path="/changeInfo.do" location="650,550" dimension="320,104" />
+  <StrutsActivity path="/order.do" location="650,750" dimension="320,104" />
+  <StrutsActivity path="/address.do" location="50,850" dimension="320,104" />
+  <StrutsActivity path="/changeAddressform.do" location="1250,750" dimension="320,104" />
+  <StrutsActivity path="/changeAddress.do" location="1250,950" dimension="320,104" />
+  <StrutsActivity path="/changeOrderSendWayform.do" location="50,2150" dimension="320,104" />
+  <StrutsActivity path="/changeOrderSendWayform2.do" location="1250,150" dimension="320,104" />
+  <StrutsActivity path="/changeOrderSendWay.do" location="650,1550" dimension="320,104" />
+  <StrutsActivity path="/changeOrderInfoform.do" location="1250,550" dimension="320,104" />
+  <StrutsActivity path="/changeOrderInfo.do" location="650,1750" dimension="320,104" />
+  <StrutsActivity path="success;6" location="650,1350" dimension="282,87" />
+  <StrutsActivity path="/WEB-INF/jsp/information/user-info.jsp" location="50,550" dimension="274,53" />
+  <StrutsActivity path="/WEB-INF/jsp/information/user-info-form.jsp" location="650,950" dimension="310,53" />
+  <StrutsActivity path="/WEB-INF/jsp/information/order-info.jsp" location="50,1150" dimension="280,53" />
+  <StrutsActivity path="/WEB-INF/jsp/information/address-info.jsp" location="650,1150" dimension="297,53" />
+  <StrutsActivity path="/WEB-INF/jsp/information/address-form.jsp" location="50,1550" dimension="304,53" />
+  <StrutsActivity path="/WEB-INF/jsp/information/sendWay-form.jsp" location="50,1750" dimension="312,53" />
+  <StrutsActivity path="/WEB-INF/jsp/information/order-info-form.jsp" location="50,1950" dimension="316,53" />
+  <StrutsActivity path="/WEB-INF/jsp/information/success.jsp" location="1250,1350" dimension="270,53" />
+  <StrutsActivity path="/WEB-INF/jsp/authorize/login_info.jsp" location="188,710" dimension="265,53" />
+  <StrutsActivity path="/WEB-INF/jsp/authorize/login_form.jsp" location="1199,408" dimension="272,53" />
+  <StrutsActivity path="/WEB-INF/jsp/authorize/register_two.jsp" location="461,408" dimension="282,53" />
+  <StrutsActivity path="/WEB-INF/jsp/authorize/login_ok.jsp" location="843,408" dimension="256,53" />
+  <StrutsActivity path="/WEB-INF/jsp/authorize/register_one.jsp" location="0,229" dimension="283,53" />
+  <StrutsActivity path="/WEB-INF/jsp/authorize/register_ok.jsp" location="12,1012" dimension="274,53" />
+  <StrutsActivity path="/WEB-INF/jsp/information/user_info.jsp" location="50,350" dimension="276,53" />
+  <StrutsTransition id="/changeOrderSendWayform2.do,success,/WEB-INF/jsp/information/sendWay-form.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="206,1776" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/address.do,success,/WEB-INF/jsp/information/address-info.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="345,954" />
+      <AbsolutePoint location="345,1176" />
+      <AbsolutePoint location="650,1176" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showInfo.do,success,/WEB-INF/jsp/information/user-info-form.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="370,1402" />
+      <AbsolutePoint location="506,1402" />
+      <AbsolutePoint location="506,1110" />
+      <AbsolutePoint location="805,1110" />
+      <AbsolutePoint location="805,1003" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/changeAddressform.do,success,/WEB-INF/jsp/information/address-form.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1410,854" />
+      <AbsolutePoint location="1410,899" />
+      <AbsolutePoint location="626,899" />
+      <AbsolutePoint location="626,1576" />
+      <AbsolutePoint location="354,1576" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="success;6,null,/WEB-INF/jsp/information/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="932,1388" />
+      <AbsolutePoint location="1250,1388" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/changeInfo.do,success,/WEB-INF/jsp/information/user-info-form.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,588" />
+      <AbsolutePoint location="566,588" />
+      <AbsolutePoint location="566,976" />
+      <AbsolutePoint location="650,976" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/changeOrderInfoform.do,success,/WEB-INF/jsp/information/order-info-form.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,602" />
+      <AbsolutePoint location="1045,602" />
+      <AbsolutePoint location="1045,1976" />
+      <AbsolutePoint location="366,1976" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/changeOrderSendWayform.do,success,/WEB-INF/jsp/information/sendWay-form.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,2202" />
+      <AbsolutePoint location="-150,2202" />
+      <AbsolutePoint location="-150,1776" />
+      <AbsolutePoint location="50,1776" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order.do,success,/WEB-INF/jsp/information/order-info.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,802" />
+      <AbsolutePoint location="-75,802" />
+      <AbsolutePoint location="-75,1176" />
+      <AbsolutePoint location="50,1176" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/changeOrderInfo.do,success,/WEB-INF/jsp/information/order-info-form.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1818" />
+      <AbsolutePoint location="178,1818" />
+      <AbsolutePoint location="178,1950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/changeOrderSendWay.do,success,/WEB-INF/jsp/information/sendWay-form.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1618" />
+      <AbsolutePoint location="206,1618" />
+      <AbsolutePoint location="206,1750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/information.do,success,/WEB-INF/jsp/information/user-info.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="810,202" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.super4.dang.domain">
+    <class name="Category" table="d_d_category">
+        <id name="id" type="integer">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="turn" type="integer">
+            <column name="turn"  not-null="true" />
+        </property>
+        <property name="en_name" type="string">
+            <column name="en_name" not-null="true"/>
+        </property>
+     		<property name="cn_name" type="string">
+            <column name="cn_name"  not-null="true"/>
+        </property>
+        <property name="abridge_name" type="string">
+            <column name="abridge_name"/>
+        </property>
+        <property name="parent_id" type="integer">
+            <column name="parent_id" not-null="true" />
+        </property>
+        <property name="category_value" type="string">
+            <column name="category_value" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

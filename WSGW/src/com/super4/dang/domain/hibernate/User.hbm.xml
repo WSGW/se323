@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.super4.dang.domain">
+    <class name="User" table="d_d_user">
+        <id name="id" type="integer">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="email" type="string">
+            <column name="email" unique="true" not-null="true" />
+        </property>
+        <property name="nickname" type="string">
+            <column name="nickname" unique="true"/>
+        </property>
+     		<property name="passwd" type="string">
+            <column name="password" not-null="true"/>
+        </property>
+        <property name="user_integral" type="integer">
+            <column name="user_integral" not-null="true"/>
+        </property>
+        <property name="is_email_verify">
+            <column name="is_email_verify " default="0" />
+        </property>
+        <property name="email_verify_code" type="string">
+            <column name="email_verify_code"/>
+        </property>
+        <property name="last_login_time" type="long">
+            <column name="last_login_time"/>
+        </property>
+        <property name="last_login_ip" type="string">
+            <column name="last_login_ip"/>
+        </property>
+    </class>
+</hibernate-mapping>

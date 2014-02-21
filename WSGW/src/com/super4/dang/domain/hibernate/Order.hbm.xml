@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.super4.dang.domain">
+	<class name="Order" table="d_d_order">
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+
+		<many-to-one name="user" class="User" column="user_id" />
+		<many-to-one name="sendWay" class="SendWay" column="send_id"/>
+		<component name="address" class="Address">
+			<property name="id" type="integer">
+				<column name="receive_id" />
+			</property>
+			<property name="name" type="string">
+				<column name="receive_name" length="20" not-null="true" />
+			</property>
+			<property name="fullAddress" type="string">
+				<column name="full_address" length="200"
+					not-null="true" />
+			</property>
+			<property name="postalCode" type="string">
+				<column name="postal_code" length="8" not-null="true" />
+			</property>
+			<property name="mobile" type="string">
+				<column name="mobile" length="15" not-null="true" />
+			</property>
+			<property name="phone" type="string">
+				<column name="phone" length="20" />
+			</property>
+		</component>
+
+		<property name="status" type="integer">
+			<column name="status" not-null="true" />
+		</property>
+		<property name="createTime" type="long">
+			<column name="order_time" not-null="true" />
+		</property>
+		<property name="desc" type="string">
+			<column name="order_desc" length="100" />
+		</property>
+		<property name="sendFee" type="double">
+			<column name="send_fee" precision="22" scale="0"
+				not-null="true" />
+		</property>
+		<property name="totalPrice" type="double">
+			<column name="total_price" precision="22" scale="0"
+				not-null="true" />
+		</property>
+		<property name="orderPrice" type="double">
+			<column name="order_price" precision="22" scale="0"
+				not-null="true" />
+		</property>
+		<property name="sendTime" type="long">
+			<column name="send_time" />
+		</property>
+		<property name="delete" type="boolean">
+			<column name="is_delete" />
+		</property>
+	</class>
+</hibernate-mapping>

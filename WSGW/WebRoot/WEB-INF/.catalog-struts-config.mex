@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/allCategory.do" location="350,0" dimension="297,104" />
+  <StrutsActivity path="/main.do" location="647,302" dimension="252,104" />
+  <StrutsActivity path="/recommend.do" location="650,1250" dimension="305,104" />
+  <StrutsActivity path="/tejia.do" location="650,1450" dimension="236,104" />
+  <StrutsActivity path="/new.do" location="0,604" dimension="251,104" />
+  <StrutsActivity path="/list.do" location="585,604" dimension="244,104" />
+  <StrutsActivity path="/category.do" location="0,302" dimension="282,104" />
+  <StrutsActivity path="/bookList.do" location="327,302" dimension="275,104" />
+  <StrutsActivity path="/detail.do" location="950,450" dimension="85,70" />
+  <StrutsActivity path="/c_form.do" location="50,950" dimension="314,104" />
+  <StrutsActivity path="/newcomment.do" location="50,1150" dimension="311,104" />
+  <StrutsActivity path="/newreply.do" location="950,250" dimension="311,104" />
+  <StrutsActivity path="/WEB-INF/jsp/catalog/all_category.jsp" location="365,204" dimension="267,53" />
+  <StrutsActivity path="/WEB-INF/jsp/catalog/main.jsp" location="661,506" dimension="223,53" />
+  <StrutsActivity path="/WEB-INF/jsp/catalog/recommend.jsp" location="17,204" dimension="270,53" />
+  <StrutsActivity path="/WEB-INF/jsp/catalog/more_book.jsp" location="50,1350" dimension="263,53" />
+  <StrutsActivity path="/WEB-INF/jsp/catalog/tejia.jsp" location="1250,450" dimension="294,55" />
+  <StrutsActivity path="/WEB-INF/jsp/catalog/new.jsp" location="17,808" dimension="217,53" />
+  <StrutsActivity path="/WEB-INF/jsp/catalog/list.jsp" location="603,808" dimension="208,53" />
+  <StrutsActivity path="/WEB-INF/jsp/catalog/category.jsp" location="18,506" dimension="246,53" />
+  <StrutsActivity path="/WEB-INF/jsp/catalog/book_list.jsp" location="341,506" dimension="246,53" />
+  <StrutsActivity path="/WEB-INF/jsp/catalog/book_detail.jsp" location="950,850" dimension="263,53" />
+  <StrutsActivity path="/WEB-INF/jsp/catalog/comment_form.jsp" location="650,1050" dimension="291,53" />
+  <StrutsActivity path="/WEB-INF/jsp/catalog/hot.jsp" location="312,808" dimension="211,53" />
+  <StrutsActivity path="" location="950,650" dimension="35,53" />
+  <StrutsActivity path="/pingFen.do" location="1250,650" dimension="287,116" />
+  <StrutsTransition id="/tejia.do,more,/WEB-INF/jsp/catalog/more_book.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="768,1450" />
+      <AbsolutePoint location="768,1376" />
+      <AbsolutePoint location="313,1376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/main.do,success,/WEB-INF/jsp/catalog/main.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="773,406" />
+      <AbsolutePoint location="773,506" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/allCategory.do,success,/WEB-INF/jsp/catalog/all_category.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="498,104" />
+      <AbsolutePoint location="498,204" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/new.do,success,/WEB-INF/jsp/catalog/new.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="95,708" />
+      <AbsolutePoint location="95,808" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/bookList.do,success,/WEB-INF/jsp/catalog/book_list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="464,406" />
+      <AbsolutePoint location="464,506" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/list.do,success,/WEB-INF/jsp/catalog/list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="707,708" />
+      <AbsolutePoint location="707,808" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/recommend.do,success,/WEB-INF/jsp/catalog/recommend.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1302" />
+      <AbsolutePoint location="-75,1302" />
+      <AbsolutePoint location="-75,230" />
+      <AbsolutePoint location="17,230" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/category.do,success,/WEB-INF/jsp/catalog/category.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="141,406" />
+      <AbsolutePoint location="141,506" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/tejia.do,success,/WEB-INF/jsp/catalog/tejia.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="768,1502" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/c_form.do,success,/WEB-INF/jsp/catalog/comment_form.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="207,1054" />
+      <AbsolutePoint location="207,1076" />
+      <AbsolutePoint location="650,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/detail.do,success,/WEB-INF/jsp/catalog/book_detail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1000,520" />
+      <AbsolutePoint location="1000,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/new.do,more,/WEB-INF/jsp/catalog/more_book.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2,708" />
+      <AbsolutePoint location="2,1376" />
+      <AbsolutePoint location="50,1376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

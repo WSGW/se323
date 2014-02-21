@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/WEB-INF/jsp/help/help.jsp" location="350,50" dimension="198,53" />
+  <StrutsActivity path="/WEB-INF/jsp/authorize/login-info.jsp" location="50,250" dimension="263,53" />
+  <StrutsActivity path="/WEB-INF/jsp/common/login-info.jsp" location="650,50" dimension="261,53" />
+  <StrutsTransition id="/help.do,success,/WEB-INF/jsp/help/help.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,288" />
+      <AbsolutePoint location="449,288" />
+      <AbsolutePoint location="449,103" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

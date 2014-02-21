@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.super4.dang.domain">
+    <class name="Address" table="d_d_receive_address">
+        <id name="id" type="integer">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="userId" type="integer">
+            <column name="user_id" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="receive_name" length="20" not-null="true" />
+        </property>
+        <property name="fullAddress" type="string">
+            <column name="full_address" length="200" not-null="true" />
+        </property>
+        <property name="postalCode" type="string">
+            <column name="postal_code" length="8" not-null="true" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="mobile" length="15" not-null="true" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="20" />
+        </property>
+        <property name="defaultAddress" type="boolean">
+            <column name="is_default" />
+        </property>
+    </class>
+</hibernate-mapping>

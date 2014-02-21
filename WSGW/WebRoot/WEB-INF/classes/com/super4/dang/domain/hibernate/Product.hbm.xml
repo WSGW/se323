@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.super4.dang.domain">
+    <class name="Product" table="d_d_product" lazy="false">
+        <id name="id" type="integer">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="category_id" type="integer">
+            <column name="category_id" not-null="true" />
+        </property>
+        <property name="product_name" type="string">
+            <column name="product_name" not-null="true"/>
+        </property>
+     		<property name="description" type="string">
+            <column name="description"/>
+        </property>
+        <property name="add_time" type="long">
+            <column name="add_time" not-null="true" />
+        </property>
+        <property name="fixed_price" type="double">
+            <column name="fixed_price" not-null="true" />
+        </property>
+        <property name="dang_price" type="double">
+            <column name="dang_price" not-null="true" />
+        </property>
+        <property name="keywords" type="string">
+            <column name="keywords" />
+        </property>
+      	<property name="weight" type="double">
+      						<column name="product_weight"/>
+        </property>
+        <property name="has_deleted" type="int">
+            <column name="has_deleted" not-null="true" />
+        </property>
+        <property name="product_pic" type="string">
+            <column name="product_pic" not-null="true" />
+        </property>
+      	<joined-subclass name="MobiePhone" table="d_d_mobiephone">
+      				<key column="id"></key>
+      				<property name="company" column="company" type="string" not-null="true"></property>
+      				<property name="publishing" column="publishing" type="string" not-null="true"></property>
+      				<property name="publish_time" column="publish_time" type="long" not-null="true"></property>
+      				<property name="shangshi_time" column="shangshi_time" type="long" ></property>
+      				<property name="isbn" column="isbn" type="string" ></property>
+      				<property name="publish_summary" column="publish_summary" type="string" length="65535" not-null="true"></property>
+      	</joined-subclass>
+    </class>
+</hibernate-mapping>

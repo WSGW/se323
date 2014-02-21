@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/showindex.do" location="50,450" dimension="364,104" />
+  <StrutsActivity path="/showhead.do" location="650,250" dimension="364,104" />
+  <StrutsActivity path="/showmenu.do" location="650,450" dimension="364,104" />
+  <StrutsActivity path="/showmain.do" location="50,650" dimension="364,104" />
+  <StrutsActivity path="/showAllUser.do" location="650,1050" dimension="347,104" />
+  <StrutsActivity path="/showUserInfo.do" location="50,1250" dimension="347,104" />
+  <StrutsActivity path="/deleteUser.do" location="1250,1650" dimension="347,104" />
+  <StrutsActivity path="/showSearch.do" location="650,1250" dimension="347,104" />
+  <StrutsActivity path="/searchUser.do" location="1250,2250" dimension="347,104" />
+  <StrutsActivity path="/showform1.do" location="50,1850" dimension="351,104" />
+  <StrutsActivity path="/showform2.do" location="650,1850" dimension="351,104" />
+  <StrutsActivity path="/showform3.do" location="1250,2650" dimension="351,104" />
+  <StrutsActivity path="/addproduct.do" location="650,2850" dimension="351,104" />
+  <StrutsActivity path="/showAllProduct.do" location="50,2050" dimension="351,104" />
+  <StrutsActivity path="/showsearch.do" location="650,2050" dimension="351,104" />
+  <StrutsActivity path="/JSONCategory.do" location="1250,250" dimension="351,104" />
+  <StrutsActivity path="/showAllOrder.do" location="1250,650" dimension="341,104" />
+  <StrutsActivity path="/showOrder.do" location="1250,1050" dimension="341,104" />
+  <StrutsActivity path="/sureOrder.do" location="650,2450" dimension="341,104" />
+  <StrutsActivity path="/searchOrderForm.do" location="1250,2450" dimension="341,104" />
+  <StrutsActivity path="/searchOrder.do" location="50,2650" dimension="341,104" />
+  <StrutsActivity path="success;6" location="1250,1850" dimension="351,87" />
+  <StrutsActivity path="/WEB-INF/jsp/management/jiagou/mainindex.jsp" location="650,650" dimension="339,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/jiagou/header.jsp" location="50,850" dimension="316,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/jiagou/menu.jsp" location="650,850" dimension="309,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/jiagou/main.jsp" location="50,1050" dimension="304,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/user/alluser-info.jsp" location="50,1450" dimension="333,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/user/user-info.jsp" location="650,1450" dimension="319,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/user/search-user.jsp" location="50,1650" dimension="339,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/product/add-product-form1.jsp" location="50,2250" dimension="404,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/product/add-product-form2.jsp" location="650,2250" dimension="404,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/product/add-product-pic.jsp" location="50,2850" dimension="384,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/product/allproduct.jsp" location="50,2450" dimension="345,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/product/search-product.jsp" location="1250,450" dimension="380,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/order/allorder-info.jsp" location="1250,1250" dimension="345,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/order/order-info.jsp" location="1250,1450" dimension="331,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/order/search-order.jsp" location="650,2650" dimension="351,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/jiagou/success.jsp" location="1250,2050" dimension="325,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/jiagou/management-index.jsp" location="50,250" dimension="398,53" />
+  <StrutsActivity path="/WEB-INF/jsp/authorize/login_info.jsp" location="650,50" dimension="265,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/product/search-user.jsp" location="650,1650" dimension="359,53" />
+  <StrutsActivity path="/WEB-INF/jsp/management/order/search-product.jsp" location="1250,850" dimension="365,53" />
+  <StrutsActivity path="/deleteProduct.do" location="1250,2850" dimension="351,104" />
+  <StrutsTransition id="/showSearch.do,success,/WEB-INF/jsp/management/user/search-user.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="823,1302" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showmain.do,success,/WEB-INF/jsp/management/jiagou/main.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="232,702" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="success;6,null,/WEB-INF/jsp/management/jiagou/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1425,1937" />
+      <AbsolutePoint location="1425,2050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showAllProduct.do,success,/WEB-INF/jsp/management/product/allproduct.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,2102" />
+      <AbsolutePoint location="-45,2102" />
+      <AbsolutePoint location="-45,2476" />
+      <AbsolutePoint location="50,2476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showform1.do,success,/WEB-INF/jsp/management/product/add-product-form1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="401,1902" />
+      <AbsolutePoint location="429,1902" />
+      <AbsolutePoint location="429,2250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showhead.do,success,/WEB-INF/jsp/management/jiagou/header.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,288" />
+      <AbsolutePoint location="553,288" />
+      <AbsolutePoint location="553,876" />
+      <AbsolutePoint location="366,876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/searchUser.do,success,/WEB-INF/jsp/management/user/alluser-info.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,2318" />
+      <AbsolutePoint location="613,2318" />
+      <AbsolutePoint location="613,1476" />
+      <AbsolutePoint location="383,1476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showform3.do,success,/WEB-INF/jsp/management/product/add-product-pic.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1425,2754" />
+      <AbsolutePoint location="1425,2799" />
+      <AbsolutePoint location="242,2799" />
+      <AbsolutePoint location="242,2850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showAllOrder.do,success,/WEB-INF/jsp/management/order/allorder-info.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1420,702" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showAllUser.do,success,/WEB-INF/jsp/management/user/alluser-info.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="823,1102" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/searchOrderForm.do,success,/WEB-INF/jsp/management/order/search-order.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1420,2502" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showform2.do,success,/WEB-INF/jsp/management/product/add-product-form2.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1001,1902" />
+      <AbsolutePoint location="1029,1902" />
+      <AbsolutePoint location="1029,2250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteProduct.do,success,/WEB-INF/jsp/management/product/search-product.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1601,2902" />
+      <AbsolutePoint location="1795,2902" />
+      <AbsolutePoint location="1795,476" />
+      <AbsolutePoint location="1630,476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showUserInfo.do,success,/WEB-INF/jsp/management/user/user-info.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="223,1302" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showOrder.do,success,/WEB-INF/jsp/management/order/order-info.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1591,1102" />
+      <AbsolutePoint location="1705,1102" />
+      <AbsolutePoint location="1705,1476" />
+      <AbsolutePoint location="1581,1476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showindex.do,success,/WEB-INF/jsp/management/jiagou/mainindex.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="232,554" />
+      <AbsolutePoint location="232,599" />
+      <AbsolutePoint location="819,599" />
+      <AbsolutePoint location="819,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showmenu.do,success,/WEB-INF/jsp/management/jiagou/menu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="832,502" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showsearch.do,success,/WEB-INF/jsp/management/product/search-product.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1001,2102" />
+      <AbsolutePoint location="1159,2102" />
+      <AbsolutePoint location="1159,476" />
+      <AbsolutePoint location="1250,476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

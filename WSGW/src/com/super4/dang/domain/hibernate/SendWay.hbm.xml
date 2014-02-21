@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.super4.dang.domain">
+    <class name="SendWay" table="d_d_send_way">
+        <id name="id" type="integer">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="isClose">
+            <column name="is_close" />
+        </property>
+        <property name="sendWay" type="string">
+            <column name="send_way" length="30" not-null="true" />
+        </property>
+        <property name="sendDesc" type="string">
+            <column name="send_desc" length="100" />
+        </property>
+        <property name="sendFee" type="double">
+            <column name="send_fee" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
